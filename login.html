@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Login Page</title>
+        <link rel="stylesheet" type="text/css" href="st.css">
+    </head>  
+    <body>
+        <div class="title">
+            <h1> LA STOFFA</h1>
+             <h2>Explore the stylist in you!</h2>
+          </div>
+      
+      <div class="loginbox">
+        <img src="1.png" class="avatar">
+         <h1>Your stylist is just around the corner....</h1>
+<form >
+  <p>Username</p><br>
+<input type="text" name="userid" placeholder="Enter Username"/><br>
+<p>Password</p><br>
+<input type="password" name="password" placeholder="Enter Password"/><br>
+<input type="button" onclick="check(this.form)" value="Login"/><br>
+<input type="reset" value="Cancel"/><br><br>
+<a href="#">Lost your password?</a><br><br>
+<a href="#">Don't have an account?</a>
+</form>
+</div>
+<script language="javascript">
+function check(form)
+{
+ if(form.userid.value == "Shreya" ||form.userid.value == "Shravya"||form.userid.value == "Merin" && form.password.value == "123"||form.userid.value == "shreya" ||form.userid.value == "shravya" ||form.userid.value == "merin")
+  {
+    window.open('que.html')
+  }
+ else
+ {
+   alert("Error Password or Username")
+  }
+}
+</script>
+</body>
+</html>

@@ -1,0 +1,457 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+*{
+  margin:0;
+  padding:0px;
+}
+
+
+h1{
+    color:antiquewhite;
+    text-align:center;
+}
+h2{
+    color: beige;
+}
+img
+{
+max-width: 100%;
+height:auto;
+display:block;
+margin-left: auto;
+margin-right: auto;
+}
+.text
+{
+color: beige;
+text-align: center;
+text-shadow: 5px 5px 5px black;
+}
+
+.text1
+{
+
+color: beige;
+font-family:Helvetica;
+text-align: center;
+text-shadow: 3px 3px 3px rgb(17, 1, 32);
+}
+
+.title h1{
+    position: absolute;
+   left:0%;
+  color:ivory;
+  font-size: 50px;
+  font-family: Haettenschweiler;
+  text-shadow: 3px 3px 3px black;
+}
+.title h2{
+    position: absolute;
+   left:0%;
+    color:rgb(220, 228, 228);
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    text-shadow: 3px 3px 3px black;
+  
+}
+div.gallery{
+    border:1px solid #ccc;
+}
+div.gallery:hover{
+    border:1px solid black;
+
+}
+div.gallery img{
+    width:70%;
+    height:auto;
+    font-size: 20px;
+    text-align: 20px;
+    text-shadow: 5px 5px 5px black;
+    color:beige
+}
+div.desc{
+    padding:15px;
+    text-align: center;
+    font-size:20px;
+    text-shadow: 5px 5px 5px black;
+    color:beige
+}
+*{box-sizing:border-box;}
+
+.responsive{
+    padding:0 6px;
+    float: left;
+    width: 100%;
+
+}
+@media only screen and (max-width:
+700px){
+    .responsive{
+        width: 100%;
+    margin:6px 0;
+    }
+}
+    @media only screen and (max-width:500px)
+    {
+        .responsive{
+            width:100%;
+        }
+    }
+    .clearfix:after{
+        content:"";
+        display:table;
+        clear:both;
+    }
+    ul{
+  float:right;
+  list-style-type: none;
+  margin-top: 25px;
+}
+
+ul li {
+  display: inline-block;
+}
+ul li a{
+  text-decoration:none;
+  color: aquamarine;
+  padding: 5px 10px;
+  border : 1px solid transparent;
+  transition: 0.6s ease;
+  font-family: 'Trebuchet MS';
+
+}
+ ul li a:hover{
+   background-color:beige;
+   color: black;
+ }
+
+ ul li.active a{
+  background-color:gold ;
+   color: black;
+ }
+ 
+ .submenu1{
+  display: none;
+}
+.main ul li:hover .submenu1
+{
+      display: block;
+      position: absolute;
+      background:black ;
+      color: black;
+      margin-top: 6px;
+      margin-left :-15px;
+      box-shadow: 0px 8px 16px 0px rgba(0,0,0.2);
+      z-index: 1;
+    }
+
+  .main ul li:hover .submenu1 ul
+  {
+      display: block;
+      margin:10px;
+  }
+  .main ul li:hover .submenu1 ul li
+  {
+   width:150px;
+   padding: 10px;
+   border-bottom: 1px dotted white;
+   background:transparent;
+  }
+  .main ul li:hover .submenu1 ul li:last-child
+  {
+      border-bottom: none;
+  }
+  .main ul li:hover .submenu1 ul li a:hover
+  {
+      color: rgb(1, 1, 15)
+  }
+
+
+
+* {box-sizing: border-box}
+.mySlides {display: none}
+img {vertical-align: middle;}
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -22px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+/* Caption text */
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+  .prev, .next,.text {font-size: 11px}
+}
+
+.coupon {
+  border: 5px dotted #bbb;
+  width: 80%;
+  border-radius: 15px;
+  margin: 0 auto;
+  max-width: 600px;
+}
+
+.container {
+  padding: 2px 16px;
+  background-color: #f1f1f1;
+}
+
+.promo {
+  background: #ccc;
+  padding: 3px;
+}
+
+.expire {
+  color: red;
+}
+
+
+
+
+</style>
+</head>
+<body>
+
+        <body style="background:url(https://image.freepik.com/free-photo/wall-wallpaper-concrete-colored-painted-textured-concept_53876-31799.jpg);background-size:100% 100%">
+            <header>
+                <div class="main">
+                  <ul>
+                    <li><a href="./home.html"><bold>Home</bold></Home></a></li>
+                    <li><a href="./about.html">Our Team</a></li>
+                    <li><a href="./events.html">Events</a></li>
+                    <li><a href="./fashionservices.html">Fashion Services</a></li>
+                    <li><a href="./login.html">Style It Up!</a></li>
+                    <li><a href="./brands.html">Brands</a></li>
+                    <li><a href="./women.html">Women</a>
+                      <div class="submenu1">
+                          <ul>
+                            <li><a href="./kurtis.html">Kurtis</a></li>
+                            <li><a href="./dress.html">Dress</a></li>
+                            <li><a href="./saree.html">Sarees</a></li>
+                            <li><a href="./jacket.html">Jackets</a></li>
+                            <li><a href="heel.html">Heels</a></li>
+                            <li><a href="./earring.html">Earrings</a></li>
+                          </ul>
+                          </div>
+                    </li>
+                    <li><a href="./men.html">Men</a>
+                      <div class="submenu1">
+                          <ul>      
+                             <li><a href="./formalshirt.html">FormalShrits</a></li>
+                              <li><a href="./jackets.html">Jackets</a></li>
+                              <li><a href="./tshirt.com">T-Shirts</a></li>
+                              <li><a href="./jean.html">Jeans</a></li>
+                              <li><a href="./footwear.html">Footwear</a></li>
+                          </ul>
+                        </div>
+                        </li>
+                    <li><a href="./kids.html">Kids</a>
+                      <div class="submenu1">
+                        <ul>
+                              <li><a href="./babygirl.html">Baby Girl</a></li>
+                              <li><a href="./babyboy.html">Baby Boy</a></li>
+                              <li><a href="./footwears.html">Footwear</a></li>
+                              <li><a href="./toys.html">Toys and Books </a></li>
+                          </ul>
+                          </div>
+                    </li>
+                    <li class="active"><a href="./offers.html">Offers</a></li>
+                    <li><a href="./contactus.html">Contact us</a></li>
+                  </ul>
+                </div>
+                    <div class="title">
+                            <h1> LA STOFFA</h1>
+                            <br>
+                            <br>
+                            <br>
+                           <h2>Explore the stylist in you!</h2> 
+                          </div>
+                        </header>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <marquee behavior:scroll
+        direction:left >
+        <h1 class="text1"> <strong>Don't miss out on the best offers of the season!</strong <br> <em> GO AHEAD! EXPLORE!</em></h1>
+        </marquee>
+        <br>
+        <br>
+        <br>
+      
+
+
+
+<div class="slideshow-container">
+
+<div class="mySlides fade">
+  <div class="numbertext">1 / 3</div>
+  <a href="https://www.levi.in/hotsale" target=_blank><img src="https://i1.wp.com/www.blackerfriday.com/wp-content/uploads/2018/11/Levis-Cyber-Monday-2019.png?resize=474%2C193&ssl=1" style="width:100%"></a>
+  <div class="text">Best deals of the season</div>
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">2 / 3</div>
+  <a href="https://www2.hm.com/en_in/sale/women/last-chance-up-to-70--off.html" style="width:100%" target=_blank><img src="https://freebies2deals.com/wp-content/uploads/2015/01/freebies2deals-hm.png" style="width:100%"></a>>
+  <div class="text">Explore our collections!</div>
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">3 / 3</div>
+  <a href="https://www.nike.com/in/w/mens-sale-3yaepznik1" style="width:100%" target=_blank><img src="https://secureservercdn.net/198.71.233.23/20c.e42.myftpupload.com/wp-content/uploads/2019/03/D0wKalnWwAcgEAv.png" style="width:100%"></a>
+  <div class="text">Bringing you the absolute best!</div>
+</div>
+
+<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+<a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+</div>
+<br>
+
+<div style="text-align:center">
+  <span class="dot" onclick="currentSlide(1)"></span> 
+  <span class="dot" onclick="currentSlide(2)"></span> 
+  <span class="dot" onclick="currentSlide(3)"></span> 
+</div>
+
+<br>
+<br>
+<br>
+<div class="coupon">
+        <div class="container">
+          <h3>La Stoffa coupon</h3>
+        </div>
+        <img src="https://socialmediaslang.com/wp-content/uploads/parser/h&m-coupon-codes-1.jpg" alt="Avatar" style="width:100%;">
+        <div class="container" style="background-color:white">
+          <h2><b>20% OFF YOUR PURCHASE</b></h2> 
+          <p>Get exciting La Stoffa discounts on your next purchase!.</p>
+        </div>
+        <div class="container">
+          <p>Use Promo Code: <span class="promo">BOH232</span></p>
+          <p class="expire">Expires: Jan 03, 2021</p>
+        </div>
+      </div>
+      
+
+
+
+
+
+
+<script>
+var slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("dot");
+  if (n > slides.length) {slideIndex = 1}    
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";  
+  }
+  for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " active";
+}
+</script>
+
+</body>
+</html>

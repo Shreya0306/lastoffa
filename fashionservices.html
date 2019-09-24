@@ -1,0 +1,638 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Our Fashion Services</title>
+  <style>
+* {box-sizing: border-box}
+.mySlides {display: none}
+img {vertical-align: middle;
+box-shadow: 9px 9px 9px rgb(4, 4, 7);
+}
+/* Slideshow container */
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+}
+*{
+  margin:0;
+  padding:0;
+}
+/* Caption text */
+  .text {
+   background-color:white;
+   opacity:0.75;
+  color: black;
+  font-size: 25px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+  text-shadow: 3px 3px 3px gold;
+  }
+/* Number text (1/15 etc) */
+.numbertext {
+  color:rgb(250, 241, 241);
+  font-size: 18px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+  text-shadow: 3px 3px 3px rgb(8, 8, 8);
+}
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration:5s;
+  animation-name: fade;
+  animation-duration: 5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+  .prev, .next,.text {font-size: 11px}
+}
+.title h1{
+  color:ivory;
+  font-size: 50px;
+  font-family: Haettenschweiler;
+  text-shadow: 3px 3px 3px black;
+}
+.title h2{
+    color:rgb(220, 228, 228);
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    text-shadow: 3px 3px 3px black;
+}
+  .mov{
+  color: beige;
+  text-align:center;
+  font-family:Arial, Helvetica, sans-serif;
+  text-shadow: 5px 5px 5px #000;
+  }
+  ul{
+  float:right;
+  list-style-type: none;
+  margin-top: 25px;
+}
+
+ul li {
+  display: inline-block;
+}
+ul li a{
+  text-decoration:none;
+  color: aquamarine;
+  padding: 5px 20px;
+  border : 1px solid transparent;
+  transition: 0.6s ease;
+  font-family: 'Trebuchet MS';
+
+}
+ ul li a:hover{
+   background-color:beige;
+   color: black;
+ }
+
+ ul li.active a{
+  background-color:gold ;
+   color: black;
+ }
+ 
+ .submenu1{
+  display: none;
+}
+.main ul li:hover .submenu1
+{
+      display: block;
+      position: absolute;
+      background:black ;
+      color: black;
+      margin-top: 6px;
+      margin-left :-15px;
+      box-shadow: 0px 8px 16px 0px rgba(0,0,0.2);
+      z-index: 1;
+    }
+
+  .main ul li:hover .submenu1 ul
+  {
+      display: block;
+      margin:10px;
+  }
+  .main ul li:hover .submenu1 ul li
+  {
+   width:150px;
+   padding:15px;
+   border-bottom: 1px dotted white;
+   background:transparent;
+  }
+  .main ul li:hover .submenu1 ul li:last-child
+  {
+      border-bottom: none;
+  }
+  .main ul li:hover .submenu1 ul li a:hover
+  {
+      color: rgb(1, 1, 15)
+  }
+  div.gallery {
+  border: 2px solid black;
+}
+
+div.gallery:hover {
+  border: 2px solid azure;
+}
+
+div.gallery img {
+  width: 100%;
+  height: auto;
+  box-shadow: 9px 9px 9px rgb(1, 1, 32);
+}
+
+div.desc {
+  padding: 15px;
+  font-size:20px;
+  text-align: center;
+  text-shadow: 5px 5px 5px black;
+  color: beige;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.responsive {
+  padding: 0 6px;
+  float: left;
+  width: 16%;
+}
+
+@media only screen and (max-width: 700px) {
+  .responsive {
+    width: 49.99999%;
+    margin: 6px 0;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  .responsive {
+    width: 100%;
+  }
+}
+
+.clearfix:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+.ok1{
+    color:rgb(224, 205, 205);
+    text-shadow: 2px 2px 2px black;
+}
+
+.ok
+{
+
+  font-size:15px;
+  color: white;
+}
+.chi
+{
+  text-align: center;
+  font-size: 15px;
+  color: antiquewhite;
+  text-shadow: 5px 5px 5px black;
+  }
+  .container1 {
+  position: relative;
+  width:58%;
+}
+
+.image1 {
+  display: block;
+  width: 80%;
+  height: 80%;
+  border: 3px solid rgb(7, 7, 110);
+  box-shadow: 10px 10px 10px rgb(1, 1, 32);
+}
+
+.overlay1 {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: rgb(171, 243, 243);
+  overflow: hidden;
+  width: 100%;
+  height: 0;
+  transition: 1s ease;
+}
+
+.container1:hover .overlay1 {
+  height: 100%;
+  width: 80%}
+
+.text1 {
+  color: rgb(15, 14, 14);
+  text-shadow: 2px 2px 2px rgb(136, 105, 165);
+  font-size: 22px;
+  position: absolute;
+  overflow: hidden;
+  top: 50%;
+  left: 50%;
+  font-family: Arial, Helvetica, sans-serif;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  width: 60%;
+  height: 60%;
+}
+.container2 {
+  position: relative;
+  width: 58%;
+}
+.image2 {
+  display: block;
+  width: 80%;
+  height: 80%;
+  border: 3px solid rgb(7, 7, 110);
+  box-shadow: 10px 10px 10px rgb(1, 1, 32);
+}
+
+.overlay2 {
+  position: absolute;
+  bottom: 0;
+  left:10%;
+  right:10%;
+  background-color: rgb(171, 243, 243);
+  overflow: hidden;
+  width: 100%;
+  height: 0;
+  transition: 1s ease;
+}
+.footer {
+   position:relative;
+   left: 0;
+   bottom: 0;
+   width: 100%;
+   background-color: black;
+   text-align: center;
+}
+.container2:hover .overlay2 {
+  height: 100%;
+  width:80%}
+
+.text2 {
+  color: rgb(15, 14, 14);
+  text-shadow: 3px 3px 3px rgb(139, 110, 167);
+  font-size: 22px;
+  position: absolute;
+  overflow: hidden;
+  top: 50%;
+  left: 50%;
+  font-family: Arial, Helvetica, sans-serif;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  width: 60%;
+  height: 60%;
+}
+.container3 {
+  position: relative;
+  width: 58%;
+}
+.image3 {
+  display: block;
+  width: 80%;
+  height: 80%;
+  border: 3px solid rgb(7, 7, 110);
+  box-shadow: 10px 10px 10px rgb(1, 1, 32);
+}
+
+.overlay3 {
+  position: absolute;
+  bottom: 0;
+  left:0%;
+  right:0%;
+  background-color: rgb(171, 243, 243);
+  overflow: hidden;
+  width: 100%;
+  height: 0;
+  transition: 1s ease;
+}
+
+.container3:hover .overlay3 {
+  height: 100%;
+  width: 80%}
+
+.text3 {
+  color: rgb(15, 14, 14);
+  text-shadow: 3px 3px 3px rgb(148, 127, 168);
+  font-size: 22px;
+  position: absolute;
+  overflow: hidden;
+  top: 50%;
+  left: 50%;
+  font-family: Arial, Helvetica, sans-serif;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  width: 60%;
+  height: 60%;
+}
+</style>
+</head>
+<body style="background:url(https://image.freepik.com/free-photo/wall-wallpaper-concrete-colored-painted-textured-concept_53876-31799.jpg);background-size:100% 100%">
+  <header>
+      <div class="main">
+          <ul>
+            <li><a href="./home.html"><bold>Home</bold></Home></a></li>
+            <li><a href="./about.html">Our Team</a></li>
+            <li><a href="./events.html">Events</a></li>
+            <li class="active"><a href="./fashionservices.html">Fashion Services</a></li>
+            <li><a href="./login.html">Style It Up!</a></li>
+            <li><a href="./brands.html">Brands</a></li>
+            <li><a href="./women.html">Women</a>
+              <div class="submenu1">
+                  <ul>
+                    <li><a href="./kurtis.html">Kurtis</a></li>
+                    <li><a href="./dress.html">Dress</a></li>
+                    <li><a href="./saree.html">Sarees</a></li>
+                    <li><a href="./jacket.html">Jackets</a></li>
+                    <li><a href="heel.html">Heels</a></li>
+                    <li><a href="./earring.html">Earrings</a></li>
+                  </ul>
+                  </div>
+            </li>
+            <li><a href="./men.html">Men</a>
+              <div class="submenu1">
+                  <ul>      
+                     <li><a href="./formalshirt.html">FormalShrits</a></li>
+                      <li><a href="./jackets.html">Jackets</a></li>
+                      <li><a href="./tshirt.com">T-Shirts</a></li>
+                      <li><a href="./jean.html">Jeans</a></li>
+                      <li><a href="./footwear.html">Footwear</a></li>
+                  </ul>
+                </div>
+                </li>
+            <li><a href="./kids.html">Kids</a>
+              <div class="submenu1">
+                <ul>
+                      <li><a href="./babygirl.html">Baby Girl</a></li>
+                      <li><a href="./babyboy.html">Baby Boy</a></li>
+                      <li><a href="./footwears.html">Footwear</a></li>
+                      <li><a href="./toys.html">Toys and Books </a></li>
+                  </ul>
+                  </div>
+            </li>
+            <li><a href="./offers.html">Offers</a></li>
+            <li><a href="./contactus.html">Contact us</a></li>
+          </ul>
+        </div>
+       <div class="title">
+    <h1> LA STOFFA</h1>
+     <h2>Explore the stylist in you!</h2><br><br>
+  </div>
+  </header>
+<bold class="mov"><h2> EXPLORE OUR COLLECTIONS ! CLOTHING, ACCESSORIES, SHOES,BAGS, AND MANY MORE, JUST A CLICK AWAY!</h2></bold>
+<marquee class="ok" ><bold> No Obligation To Buy</bold></marquee><br><br>
+<div class="slideshow-container">
+<div class="mySlides fade">
+
+  <div class="numbertext">1 / 15</div>
+  <img src="1.jpg" style="width:100%">
+  <div class="text">MEN SPORTSWEAR</div>
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">2 / 15</div>
+  <img src="2.jpg" style="width:100%">
+  <div class="text">MEN ETHNIC WEAR</div>
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">3 / 15</div>
+  <img src="3.jpg" style="width:100%">
+  <div class="text">WOMEN ETHNIC WEAR</div>
+</div>
+<div class="mySlides fade">
+  <div class="numbertext">4 / 15</div>
+  <img src="4.jpg" style="width:100%">
+  <div class="text">WOMEN WESTERN WEAR</div>
+</div>
+<div class="mySlides fade">
+  <div class="numbertext">5 / 15</div>
+  <img src="5.jpg" style="width:100%">
+  <div class="text">KIDS FASHION</div>
+</div>
+<div class="mySlides fade">
+  <div class="numbertext">6 / 15</div>
+  <img src="6.jpg" style="width:100%">
+  <div class="text">WOMEN FOOTWEAR</div>
+</div>
+<div class="mySlides fade">
+  <div class="numbertext">7 / 15</div>
+  <img src="7.jpg" style="width:100%">
+  <div class="text">KIDS PARTY WEAR</div>
+</div>
+<div class="mySlides fade">
+  <div class="numbertext">8 / 15</div>
+  <img src="8.jpg" style="width:100%">
+  <div class="text">WOMEN SPORTS WEAR</div>
+</div>
+<div class="mySlides fade">
+  <div class="numbertext">9 / 15</div>
+  <img src="9.jpg" style="width:100%">
+  <div class="text">BAGS FOR WOMEN</div>
+</div>
+<div class="mySlides fade">
+  <div class="numbertext">10 / 15</div>
+  <img src="10.jpg" style="width:100%">
+  <div class="text">ACCESSORIES FOR WOMEN</div>
+</div>
+<div class="mySlides fade">
+  <div class="numbertext">11 / 15</div>
+  <img src="11.jpg" style="width:100%">
+  <div class="text">BEACHWEAR FOR MEN AND WOMEN</div>
+</div>
+<div class="mySlides fade">
+  <div class="numbertext">12 / 15</div>
+  <img src="12.jpg" style="width:100%">
+  <div class="text">MEN FOOTWEAR</div>
+</div>
+<div class="mySlides fade">
+  <div class="numbertext">13 / 15</div>
+  <img src="13.jpg" style="width:100%">
+  <div class="text">TSHIRTS FOR MEN</div>
+</div>
+<div class="mySlides fade">
+  <div class="numbertext">14 / 15</div>
+  <img src="14.jpeg" style="width:100%">
+  <div class="text">MEN FORMAL WEAR</div>
+</div>
+<div class="mySlides fade">
+  <div class="numbertext">15 / 15</div>
+  <img src="15.jpg" style="width:100%">
+  <div class="text">INFANTS</div>
+</div>
+<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+<a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+</div>
+<br>
+<div style="text-align:center">
+  <span class="dot" onclick="currentSlide(1)"></span> 
+  <span class="dot" onclick="currentSlide(2)"></span> 
+  <span class="dot" onclick="currentSlide(3)"></span> 
+</div>
+<script>
+var slideIndex = 0;
+carousel();
+
+function carousel() {
+  var i;
+  var x = document.getElementsByClassName("mySlides");
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none"; 
+  }
+  slideIndex++;
+  if (slideIndex > x.length) {slideIndex = 1} 
+  x[slideIndex-1].style.display = "block"; 
+  setTimeout(carousel, 3500); // Change image every 2 seconds
+}
+</script>
+<bold class="mov"><h2>RANSACK VARIOUS BRANDS AND SHOP FROM THEIR OFFICIAL WEBSITE!</h2></bold>
+<div class="responsive">
+  <div class="gallery">
+    <a target="_blank" href="./brands.html">
+      <img src="a.jpg" alt="VERSACE" width="505" height="300">
+    </a>
+    <div class="desc"><bold>VERSACE</bold></div>
+  </div>
+</div>
+<div class="responsive">
+  <div class="gallery">
+    <a target="_blank" href="./brands.html">
+      <img src="b.jpg" alt="GUCCI" width="505" height="300">
+    </a>
+    <div class="desc"><bold>GUCCI</bold></div>
+  </div>
+</div>
+<div class="responsive">
+  <div class="gallery">
+    <a target="_blank" href="./brands.html">
+      <img src="c.jpg" alt="PUMA" width="505" height="300">
+    </a>
+    <div class="desc"><bold>PUMA</bold></div>
+  </div>
+</div>
+<div class="responsive">
+  <div class="gallery">
+    <a target="_blank" href="./brands.html">
+      <img src="d.jpg" alt="NIKE" width="505" height="300">
+    </a>
+    <div class="desc"><bold>NIKE</bold></div>
+  </div>
+</div>
+<div class="responsive">
+  <div class="gallery">
+    <a target="_blank" href="./brands.html">
+      <img src="e.jpg" alt="KENDALL+KYLIE" width="505" height="300">
+    </a>
+    <div class="desc"><bold>KENDALL + KYLIE</bold></div>
+  </div>
+</div>
+<div class="responsive">
+  <div class="gallery">
+    <a target="_blank" href="./brands.html">
+      <img src="f.jpg" alt="SABYASACHI" width="505" height="300">
+    </a>
+    <div class="desc"><bold>SABYASACHI</bold></div>
+  </div>
+</div>
+<div class="responsive">
+  <div class="gallery">
+    <a target="_blank" href="./brands.html">
+      <img src="g.jpg" alt="ALL ABOUT YOU" width="505" height="300">
+    </a>
+    <div class="desc"><bold>ALL ABOUT YOU</bold></div>
+  </div>
+</div>
+<div class="responsive">
+  <div class="gallery">
+    <a target="_blank" href="./brands.html">
+      <img src="h.jpg" alt="RITU KUMAR" width="505" height="300">
+    </a>
+    <div class="desc"><bold>RITU KUMAR</bold></div>
+  </div>
+</div>
+<div class="responsive">
+  <div class="gallery">
+    <a target="_blank" href="./brands.html">
+      <img src="i.png" alt="LEVIS" width="505" height="300">
+    </a>
+    <div class="desc"><bold>LEVIS</bold></div>
+  </div>
+</div>
+<div class="responsive">
+  <div class="gallery">
+    <a target="_blank" href="./brands.html">
+      <img src="j.jpg" alt="H & M" width="505" height="300">
+    </a>
+    <div class="desc"><bold>H & M</bold></div>
+  </div>
+</div>
+<div class="responsive">
+  <div class="gallery">
+    <a target="_blank" href="./brands.html">
+      <img src="k.jpg" alt="PRADA" width="505" height="300">
+    </a>
+    <div class="desc"><bold>PRADA</bold></div>
+  </div>
+</div>
+<div class="responsive">
+  <div class="gallery">
+    <a target="_blank" href="./brands.html">
+      <img src="l.jpg" alt="NUSH" width="505" height="300">
+    </a>
+    <div class="desc"><bold>NUSH</bold></div>
+  </div>
+</div>
+<div class="clearfix"></div>
+<div style="padding:6px;">
+ <br>
+ <br>
+  <bold class="mov"><h2>WHEN IN DOUBT, STYLE IT UP WITH US AND BE A WARDROBE INSPIRATION !</h2></bold>
+  <bold class="chi"><h3>How Our Styling Works.... </h3></bold><br>  <br>
+  <div class="container1">
+    <img src="a11.jpg" alt="Avatar" class="image1">
+    <div class="overlay1">
+      <div class="text1">We are a team of youth ,dedicated to empowering men and women to have confidence with their wardrobe & individual personal style. Our
+        main aim is to inspire you to achieve your styling goals.Our team thrive on making men and women feel 
+        amazing in their clothes! </div>
+    </div>
+  </div>
+  <div class="container2">
+    <center><img src="a22.jpg" alt="Avatar" class="image2"></center>
+    <div class="overlay2">
+      <div class="text2">We will introduce you to our closet collections and take you through a fun and interactive roller coaster of Q&A to know more about your preferences!
+        And then present before you new ways to wear classic pieces and interpret new trends.</div>
+    </div>
+  </div>
+  <div class="container3">
+     <img src="a33.jpg" alt="Avatar" class="image3">
+      <div class="overlay3">
+        <div class="text3">Based on your taste, we revitalise your wardrobe like never before!So
+          Never be stuck for what to wear again with a wardrobe that works for you. You can rely on us for each new season and year-round inspiration.
+          <em>Fashion is more about dressing according to what's fashionable but Style is more about being yourself!</em>
+        </div>
+      </div>
+    </div>
+    <br><br>
+</body> 
+</html>

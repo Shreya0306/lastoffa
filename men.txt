@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+   <html> 
+   <head>
+    <title>men</title>
+    <body style="background:url(https://res.cloudinary.com/dstldjeans/image/fetch/f_jpg/https%3A%2F%2Fd4zpg1jklewne.cloudfront.net%2Fsteak%2Fcollections%2Fmens%2Fmens-page-terry-focus-2-1552582661133%2Foriginal.jpg);background-size:50% 50%">
+     <h1>Men</h1>
+   <marquee behvaior="scroll"direction="left"><h1><em>LA Stoffa </em> brings to you the best Men's  collection, Go ahead! Explore!!!</h1></marquee>
+     <img src="https://assets.myntassets.com/w_980,c_limit,fl_progressive,dpr_2.0/assets/images/retaillabs/2019/6/28/1c964297-9c02-472a-96b0-6f9a551280b01561720257002-square-slide.jpg"width="1000" height="350"/>
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    <h2>Clothing</h2>
+    <select name="clothing" onchange="location=this.value;">
+      <option value="men.html">Choose</option>
+      <option value="Tshirts.html">T-Shirts</option>
+      <option value="CasualShirts.html">Casual Shirts</option>
+      <option value="Jackets.html">Jackets</option>
+      <option value="FormalShirts.html">Formal Shirts</option>
+      <option value="Suits.html">Suits</option>
+      <option value="Jeans.html">Jeans</option>
+      <option value="CasualTrousers.html">Casual Trousers</option>
+      <option value="FormalTrousers.html">Formal Trousers</option>
+      <option value="Shorts.html">Shorts</option>
+      <option value="TrackPants.html">Track Pants</option>
+      <option value="blazers.html"> Blazers and Coats</option>
+      <option value="sweaters.html">Sweaters and Sweatshirts</option>
+     </select>
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    <h2>Footwear</h2>
+     <select name="footwear" onchange="location=this.value;">
+      <option value="men.html">Choose</option>
+      <option value="casualshoes.html">Casual Shoes</option>
+      <option value="sportsshoes.html">Sports Shoes</option>
+      <option value="formalshoes.html">Formal Shoes</option>
+      <option value="sandlas.html">Sandals and Floaters</option>
+      <option value="flip.html">Flip Flops</option>
+      <option value="socks.html">Socks</option>
+     </select>
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+   <h2>Accessories</h2>
+    <select name="acces" onchange="location=this.value;">
+      <option value="men.html">Choose</option>
+      <option value="1.html">Watches & Wearables</option>
+      <option value="2.html">Sunglasses & Frames</option>
+      <option value="3.html">Bags & Backpacks</option>
+      <option value="4.html">Luggage & Trolleys</option>
+      <option value="5.html">Personal Care & Grooming</option>
+      <option value="6.html">Wallets & Belts</option>
+      <option value="7.html">Fasion Accessories</option>
+     </select>
+ </body>
+  </head>
+</html>

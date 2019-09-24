@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+   <html> 
+   <head>
+    <title>Baby Girl</title>
+    <style>
+    .title h1{
+  color:ivory;
+  font-size: 50px;
+  font-family: Haettenschweiler;
+  text-shadow: 3px 3px 3px black;
+}
+.title h2{
+    color:rgb(220, 228, 228);
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    text-shadow: 3px 3px 3px black;
+}
+  .mov{
+  color: beige;
+  text-align:center;
+  font-family:Arial, Helvetica, sans-serif;
+  text-shadow: 5px 5px 5px #000;
+  }
+  .mov1{
+  color:aquamarine;
+  font-size: 22px;
+  text-align:center;
+  font-family:Arial, Helvetica, sans-serif;
+  text-shadow: 5px 5px 5px #000;
+  }
+  ul{
+  float:right;
+  list-style-type: none;
+  margin-top: 25px;
+}
+*{
+  margin:0;
+  padding:0;
+}
+ul li {
+  display: inline-block;
+}
+ul li a{
+  text-decoration:none;
+  color: aquamarine;
+  padding: 5px 13px;
+  border : 1px solid transparent;
+  transition: 0.6s ease;
+  font-family: 'Trebuchet MS';
+
+}
+ ul li a:hover{
+   background-color:beige;
+   color: black;
+ }
+li.active a{
+  background-color:gold ;
+   color: black;
+ }
+ .submenu1{
+  display: none;
+}
+.main ul li:hover .submenu1
+{
+      display: block;
+      position: absolute;
+      background:black ;
+      color: black;
+      margin-top: 6px;
+      margin-left :-1px;
+      box-shadow: 0px 8px 16px 0px rgba(0,0,0.2);
+      z-index: 1;
+    }
+
+  .main ul li:hover .submenu1 ul
+  {
+      display: block;
+      margin:10px;
+  }
+  .main ul li:hover .submenu1 ul li
+  {
+   width:200px;
+   padding:15px;
+   border-bottom: 1px dotted white;
+   background:transparent;
+  }
+  .main ul li:hover .submenu1 ul li:last-child
+  {
+      border-bottom: none;
+  }
+  .main ul li:hover .submenu1 ul li a:hover
+  {
+      color: rgb(1, 1, 15)
+  }
+div.gallery {
+  border: 2px solid black;
+
+}
+
+div.gallery:hover {
+  border: 2px solid beige;
+}
+
+div.gallery img {
+  max-width: 100%;
+ height:400;
+ box-shadow: 9px 9px 9px rgb(1, 1, 32);
+
+  
+}
+
+div.desc {
+  padding: 15px;
+  font-size:17px;
+  text-align: center;
+  text-shadow: 5px 5px 5px black;
+  color: beige;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.responsive {
+  padding: 0 25px;
+  float: left;
+  width: 20%;
+
+}
+
+@media only screen and (max-width: 700px) {
+  .responsive {
+    width: 49.99999%;
+    margin: 6px 0;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  .responsive {
+    width: 100%;
+  }
+}
+
+.clearfix:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+ </style>
+</head>
+<body style="background:url(https://image.freepik.com/free-photo/wall-wallpaper-concrete-colored-painted-textured-concept_53876-31799.jpg);background-size:100% 100%">
+  <header>
+      <div class="main">
+        <ul>
+          <li><a href="./home.html"><bold>Home</bold></Home></a></li>
+          <li><a href="./about.html">Our Team</a></li>
+          <li><a href="./events.html">Events</a></li>
+          <li><a href="./fashionservices.html">Fashion Services</a></li>
+          <li><a href="./login.html">Style It Up!</a></li>
+          <li><a href="./brands.html">Brands</a></li>
+          <li><a href="./blahh.html">Women</a>
+            <div class="submenu1">
+                <ul>
+                  <li><a href="kurtis.html">Kurtis</a></li>
+                  <li><a href="dress.html">Dress</a></li>
+                  <li><a href="saree.html">Sarees</a></li>
+                  <li><a href="jacket.html">Jackets</a></li>
+                  <li><a href="heel.html">Heels</a></li>
+                  <li><a href="earring.html">Earrings</a></li>
+                </ul>
+                </div>
+          </li>
+          <li><a href="./men.html">Men</a>
+            <div class="submenu1">
+                <ul>
+                   <li><a href="formalshirt.html">FormalShirts</a></li>
+                    <li><a href="jackets.html">Jackets</a></li>
+                    <li><a href="tshirt.html">T-Shirts</a></li>
+                    <li><a href="jean.html">Jeans</a></li>
+                    <li><a href="footwear.html">Footwear</a></li>
+                </ul>
+              </div>
+              </li>
+          <li><a href="./kids.html">Kids</a>
+            <div class="submenu1">
+              <ul>
+                    <li class="active"><a href="babygirl.html">Baby Girl</a></li>
+                    <li><a href="babyboy.html">Baby Boy</a></li>
+                    <li><a href="footwears.html">Footwear</a></li>
+                    <li><a href="toys.html">Toys and Books</a></li>
+                </ul>
+                </div>
+          </li>
+          <li><a href="./offers.html">Offers</a></li>
+          <li><a href="./contactus.html">Contact us</a></li>
+        </ul>
+      </div>
+       <div class="title">
+    <h1> LA STOFFA</h1>
+     <h2>Explore the stylist in you!</h2>
+  </div>
+  </header>
+ <br><br> <bold class="mov"><h2>FOR KIDS</h2></bold>
+ <br>
+ <br><br><bold class="mov1"><h3>BABY GIRL</h3></bold><br>
+  <br>
+ <div class="responsive">
+  <div class="gallery">
+   <img src="g1.jpg"  width="800px" height="300" >
+    <div class="desc"><bold><p>In Stock <br/>Prize Range: &#8377 1,000<br/>Available for:- <br/>3-6M, 6-9M, 9-12M<br/>Sold by: La Stoffa<br/>Available at: La Stoffa</p></bold>
+     </div>
+      </div>
+       </div>
+<div class="responsive">
+  <div class="gallery">
+   <img src="g2.jpg"  width="800px" height="300" >
+    <div class="desc"><bold><p>In Stock <br/>Prize Range: &#8377 1,200<br/>Available for:- <br/>3-6M, 6-9M, 9-12M<br/>Sold by: La Stoffa<br/>Available at: La Stoffa</p></bold>
+     </div>
+      </div>
+       </div>
+ <div class="responsive">
+  <div class="gallery">
+   <img src="g3.jpg"  width="800px" height="300" >
+     <div class="desc"><bold><p>In Stock <br/>Prize Range: &#8377 750<br/>Available for:- <br/>3-6M, 6-9M, 9-12M<br/>Sold by: La Stoffa<br/>Available at: La Stoffa</p></bold>
+       </div>
+         </div>
+           </div> 
+<div class="responsive">
+  <div class="gallery">
+   <img src="g4.jpg"  width="800px" height="300" >
+    <div class="desc"><bold><p>In Stock <br/>Prize Range: &#8377 900<br/>Available for:- <br/>3-6M, 6-9M, 9-12M<br/>Sold by: La Stoffa<br/>Available at: La Stoffa</p></bold>
+     </div>
+      </div>
+       </div>
+ <div class="responsive">
+  <div class="gallery">
+   <img src="g5.jpg"  width="800px" height="300" >
+     <div class="desc"><bold><p>In Stock <br/>Prize Range: &#8377 1,250<br/>Available for:- <br/>3-6M, 6-9M, 9-12M<br/>Sold by: La Stoffa<br/>Available at: La Stoffa</p></bold>
+       </div>
+        </div>
+          </div>          
+<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+ <div class="responsive">
+  <div class="gallery">
+   <img src="g6.jpg"  width="800px" height="300" >
+    <div class="desc"><bold><p>In Stock <br/>Prize Range: &#8377 750<br/>Available for:- <br/>3-6M, 6-9M, 9-12M<br/>Sold by: La Stoffa<br/>Available at: La Stoffa</p></bold>
+      </div>
+        </div>
+       </div>      
+<div class="responsive">
+ <div class="gallery">
+   <img src="g7.jpg"  width="800px" height="300">
+   <div class="desc"><bold><p>In Stock <br/>Prize Range: &#8377 1,000<br/>Available for:- <br/>3-6M, 6-9M, 9-12M<br/>Sold by: La Stoffa<br/>Available at: La Stoffa</p></bold>
+     </div>
+       </div>
+        </div>                         
+ <div class="responsive">
+  <div class="gallery">
+   <img src="g8.jpg"  width="800px" height="300" >
+    <div class="desc"><bold><p>In Stock <br/>Prize Range: &#8377 2,000<br/>Available for:- <br/>3-6M, 6-9M, 9-12M<br/>Sold by: La Stoffa<br/>Available at: La Stoffa</p></bold>
+     </div>
+      </div>
+       </div>               
+<div class="responsive">
+ <div class="gallery">
+   <img src="g9.jpg"  width="800px" height="300" >
+    <div class="desc"><bold><p>In Stock <br/>Prize Range: &#8377 1,250<br/>Available for:- <br/>3-6M, 6-9M, 9-12M<br/>Sold by: La Stoffa<br/>Available at: La Stoffa</p></bold>
+      </div>
+       </div>
+        </div>          
+<div class="responsive">
+ <div class="gallery">
+   <img src="g10.jpg"  width="800px" height="300" >
+   <div class="desc"><bold><p>In Stock <br/>Prize Range: &#8377 500<br/>Available for:- <br/>3-6M, 6-9M, 9-12M<br/>Sold by: La Stoffa<br/>Available at: La Stoffa</p></bold>
+    </div>
+     </div>
+       </div>
+<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+</body>
+</head>
+</html>

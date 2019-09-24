@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html>
+  <head>
+      <body style="background:url(for.jpg);background-size :100% 50%">
+          <style>
+            h1{
+              font-family: Lucida Calligraphy;
+              text-align: center;
+              
+            }
+h2 {
+  font-family:Georgia;
+  margin: 5px 0;
+  color:darkmagenta;
+  text-shadow:2px 2px 2px rgb(180, 172, 172);
+}
+h3{
+  font-family:'Franklin Gothic Medium';
+  font-size: 20px;
+  color:darkred;
+  text-align: center;
+}
+#wrapper {
+  width:800px;
+  margin: 0 auto;
+  background:beige;
+  padding: 10px 15px;
+  border-radius: 10px;
+  opacity: 0.95;
+  text-shadow:2px 2px 2px rgb(180, 172, 172);
+  box-shadow: 2px 2px 2px 2px azure;
+}
+input {
+  margin: 5px 10px;
+
+}
+label{
+  font-family: 'Franklin Gothic Medium';
+}
+
+button {
+  font-size: 20px;
+  padding: 8px;
+  margin: 5px 0;
+  color:black;
+  border: 0;
+  border-radius: 15px;
+  border-bottom: 4px solid #333;
+  text-align: center;
+  transition: all 0.5s;
+  cursor:pointer;
+  text-shadow: 2px 2px 2px gray;
+}
+#submit {
+  background:green;
+}
+#reset {
+  background: rgba(209, 38, 38, 0.445);
+}
+#answer {
+  border: 1px dashed #ccc;
+  background: #eee;
+  padding: 10px;
+}
+</style>
+<script>
+        // function to calculate the result of the survey
+        function tabulateAnswers() {
+          // initialize variables for each choice's score
+          // If you add more choices and outcomes, you must add another variable here.
+          var c1score = 0;
+          var c2score = 0;
+          var c3score = 0;
+          var c4score = 0;
+          var maxscore=0;
+          // get a list of the radio inputs on the page
+          var choices = document.getElementsByTagName('input');
+          // loop through all the radio inputs
+          for (i=0; i<choices.length; i++) {
+            // if the radio is checked..
+            if (choices[i].checked) {
+              // add 1 to that choice's score
+              if (choices[i].value == 'c1') {
+                c1score = c1score + 1;
+              }
+              if (choices[i].value == 'c2') {
+                c2score = c2score + 1;
+              }
+              if (choices[i].value == 'c3') {
+                c3score = c3score + 1;
+              }
+              if (choices[i].value == 'c4') {
+                c4score = c4score + 1;
+              }
+              // If you add more choices and outcomes, you must add another if statement below.
+            }
+          }
+          
+          // Find out which choice got the highest score.
+          // If you add more choices and outcomes, you must add the variable here.
+           var maxscore = Math.max(c1score,c2score,c3score,c4score)
+           if(maxscore==0)
+            {
+             window.alert('OOPS YOUR CHOICES ARE IMPORTANT! WE CAN DECIDE A PARTICULAR WARDROBE FOR YOU ONLY IF YOU CHOOSE')
+             }
+          else{
+          if (c1score == maxscore) { // If user chooses the first choice the most, this outcome will be displayed.
+            window.open('que1.html')
+          }
+          if (c2score == maxscore) { // If user chooses the second choice the most, this outcome will be displayed.
+           
+           window.open('que2.html')}
+          if (c3score == maxscore) { // If user chooses the third choice the most, this outcome will be displayed.
+            window.open('que3.html')}
+          if (c4score == maxscore) { // If user chooses the fourth choice the most, this outcome will be displayed.
+           window.open('que4.html')
+            }
+          }
+        }
+        function resetAnswer() {
+            window.open('que.html')
+        }
+        </script>
+
+<div id="wrapper">
+  <h1>Want to spice up your wardrobe? </h1>
+  <h3>Take this questionnaire as we give you a complete wardrobe makeover!</h3>
+  <br>
+  <br>
+
+  
+  <form id="quiz">
+    <!-- Question 1 -->
+    <h2>Which part of your wardrobe would you like to focus on?</h2>
+    <!-- Here are the choices for the first question. Each input tag must have the same name. For this question, the name is q1. -->
+    <!-- The value is which answer the choice corresponds to. -->
+    <label><input type="radio" name="q1" value="c1">
+     My day-to-day wardrobe
+    </label><br />
+    <label><input type="radio" name="q1" value="c2">
+     My work wardrobe
+    </label><br />
+    <label><input type="radio" name="q1" value="c3">
+      My college wardrobe
+    </label><br />
+    <label><input type="radio" name="q1" value="c4">
+      Too cool for school wardrobe
+    </label><br />
+    <br>
+    <br>
+    <br>
+
+
+    <!-- Question 2 -->
+    <h2>Which age bracket do you fit into in terms of style?</h2>
+    <!-- Here are the choices for the second question. Notice how each input tag has the same name (q2), but a different name than the previous question. -->
+    <label><input type="radio" name="q2" value="c1">
+      Over 35
+    </label><br />
+    <label><input type="radio" name="q2" value="c2">
+     Under 35
+    </label><br />
+    <label><input type="radio" name="q2" value="c3">
+      Under 25
+    </label><br />
+    <label><input type="radio" name="q2" value="c4">
+      Under 16
+    </label><br />
+    <br>
+    <br>
+    <br>
+    
+    <!-- Question 3 -->
+    <h2>How far out of your comfort zone are you willing to go?</h2>
+    <!-- Choices for the third question -->
+    <label><input type="radio" name="q3" value="c1">
+      Play it safe
+    </label><br />
+    <label><input type="radio" name="q3" value="c2">
+      Push me a little
+    </label><br />
+    <label><input type="radio" name="q3" value="c3">
+      Go beyond
+    </label><br />
+    <label><input type="radio" name="q3" value="c4">
+      Not sure,surprise me
+    </label><br />
+    <br>
+    <br>
+    <br>
+
+    <!-- Question 4 -->
+    <h2>Which of the following would you rather wear?</h2>
+    <!-- Choices for the fourth question -->
+    <label><input type="radio" name="q4" value="c1">
+      non traditional; extravagant, wild patterns in exotic textures
+    </label><br />
+    <label><input type="radio" name="q4" value="c2">
+      Flapper dresses to pinup dresses
+    </label></br>
+    <label><input type="radio" name="q4" value="c3">
+      Trendy, strong colours which are not too extavagant
+    </label><br />
+    <label><input type="radio" name="q4" value="c4">
+    Elegance with comfort.
+    </label><br />
+    <br>
+
+<h1><em>Hello Ladies!<br>
+ We have got an exclusive set of questions for you!</em></h1><br>
+<!-- Question 5 -->
+<h2>Which of the following outfits would you prefer?</h2><br>
+<!-- Here are the choices for the second question. Notice how each input tag has the same name (q2), but a different name than the previous question. -->
+<label><input type="radio" name="q2" value="c1">
+  <img src="https://blog.stylewe.com/wp-content/uploads/2016/11/Bohemian-Fashion-Style-1.jpg" width=40%>
+          </label>
+          &emsp;&emsp;
+<label><input type="radio" name="q2" value="c2">
+ <img src="https://blog.stylewe.com/wp-content/uploads/2016/11/vintage-fashion-style-3.jpg" width=40% height=480px>
+</label><br>
+<label><input type="radio" name="q2" value="c3">
+    <img src="https://blog.stylewe.com/wp-content/uploads/2016/11/chic-fashion-style-4.jpg" width=40%/>
+</label>
+&emsp;&emsp;
+<label><input type="radio" name="q2" value="c4">
+  <img src="https://blog.stylewe.com/wp-content/uploads/2016/11/casual-fashion-style-1.jpg" width=40%>
+</label><br /><br>
+<br>
+<br>
+
+
+
+
+
+
+    <!-- Question 6-->
+    <h2>Which of the following type of accessory would you prefer?</h2><br>
+    <!-- Here are the choices for the second question. Notice how each input tag has the same name (q2), but a different name than the previous question. -->
+    <label><input type="radio" name="q2" value="c1">
+      <img src="https://cdn.shopify.com/s/files/1/1049/2916/products/hair-accessories-boho-feather-weave-hair-accessory-1_800x.jpg?v=1490947301" width=40%>
+              </label>
+              &emsp;&emsp;
+    <label><input type="radio" name="q2" value="c2">
+     <img src="https://www.vintagefangirl.com/wp-content/uploads/2011/12/vintage-beaded-collar-craft-540x350.jpg" width=40% height=300px >
+    </label><br /><br>
+    <label><input type="radio" name="q2" value="c3">
+        <img src="https://www.tastefulspace.com/wp-content/uploads/2017/06/fashion-accessories-for-women-728x728.jpg" width=40%/>
+    </label>
+    <label><input type="radio" name="q2" value="c4">
+      <img src="https://i.pinimg.com/originals/1f/04/cc/1f04cc7115d027969dfb582be046eb93.jpg" width=40%>
+    </label>
+    <br>
+    <br>
+    <br>
+
+
+<!-- Question 7-->
+<h2>Your preferred type of footwear would be?</h2><br>
+<!-- Here are the choices for the second question. Notice how each input tag has the same name (q2), but a different name than the previous question. -->
+<label><input type="radio" name="q2" value="c1">
+  <img src="boho.jpg" width=40% height=480px>
+          </label>
+          &emsp;&emsp;
+<label><input type="radio" name="q2" value="c2">
+ <img src="vint.jpg" width=40% height=480px>
+</label><br><br>
+<label><input type="radio" name="q2" value="c3">
+    <img src="chic.jpg" width=40%/>
+</label>
+&emsp;&emsp;
+<label><input type="radio" name="q2" value="c4">
+  <img src="cas1.jpg" width=40%>
+</label><br /><br>
+<br>
+<br>
+
+
+
+<br>
+<br>
+<br>
+<br>
+&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;<button type="submit" id="submit" onclick="tabulateAnswers()">Submit Your Answers</button>
+&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;
+  <button type="reset" id="reset" onclick="resetAnswer()">Reset</button>
+  </form>
+  </div>
+  
+</body>
+</head>
+</html>
+

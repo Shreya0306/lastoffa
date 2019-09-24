@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+   <html> 
+   <head>
+    <title>brands</title>
+    <body>
+     <h1>Brands</h1>
+ <marquee behvaior="scroll"direction="left"><h1><em>TRENDS FOR HIM AND HER</em></h1></marquee>
+      <a href="https://kendall-kylie.com/" target="_blank"><img src="https://m.media-amazon.com/images/S/abs-image-upload-na/f/AmazonStores/ATVPDKIKX0DER/38ca3e451f185c37d81a3760fb38b96d.w3000.h600._CR0%2C0%2C3000%2C600_SX1920_.jpg" width="1200" height="350"/></a><br><br><br>
+      <a href="https://www.gucci.com/int/en/" target="_blank"><img src="https://media.gucci.com/content/StyleNewsSingle_Standard_340x202/1559138406/StyleNewsSingle_S01CRUISE-beauty_001_Default.jpg"width="700" height="350"/></a><br><br><br>
+      <a href="https://www.givenchy.com/america/en/homepage"target="_blank"><img src="https://www.elitestores.com/pub/media/wysiwyg/headers/givenchy.jpg"width="800" height="350"/></a><br><br><br>
+</body>
+</head>
+</html>

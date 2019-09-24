@@ -1,0 +1,451 @@
+<!DOCTYPE html>
+   <html> 
+   <head>
+    <title>Brands</title>
+    <style>
+    .title h1{
+  color:ivory;
+  font-size: 50px;
+  font-family: Haettenschweiler;
+  text-shadow: 3px 3px 3px black;
+}
+.title h2{
+    color:rgb(220, 228, 228);
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    text-shadow: 3px 3px 3px black;
+}
+  .mov{
+  color: beige;
+  text-align:center;
+  font-family:Arial, Helvetica, sans-serif;
+  text-shadow: 5px 5px 5px #000;
+  }
+  .mov1{
+  color:aquamarine;
+  font-size: 22px;
+  text-align:left;
+  font-family:Arial, Helvetica, sans-serif;
+  text-shadow: 5px 5px 5px #000;
+  }
+  ul{
+  float:right;
+  list-style-type: none;
+  margin-top: 25px;
+}
+*{
+  margin:0;
+  padding:0;
+}
+ul li {
+  display: inline-block;
+}
+ul li a{
+  text-decoration:none;
+  color: aquamarine;
+  padding: 5px 20px;
+  border : 1px solid transparent;
+  transition: 0.6s ease;
+  font-family: 'Trebuchet MS';
+
+}
+ ul li a:hover{
+   background-color:beige;
+   color: black;
+ }
+
+ ul li.active a{
+  background-color:gold ;
+   color: black;
+ }
+ .submenu1{
+  display: none;
+}
+.main ul li:hover .submenu1
+{
+      display: block;
+      position: absolute;
+      background:black ;
+      color: black;
+      margin-top: 6px;
+      margin-left :-15px;
+      box-shadow: 0px 8px 16px 0px rgba(0,0,0.2);
+      z-index: 1;
+    }
+
+  .main ul li:hover .submenu1 ul
+  {
+      display: block;
+      margin:10px;
+  }
+  .main ul li:hover .submenu1 ul li
+  {
+   width:150px;
+   padding: 15px;
+   border-bottom: 1px dotted white;
+   background:transparent;
+  }
+  .main ul li:hover .submenu1 ul li:last-child
+  {
+      border-bottom: none;
+  }
+  .main ul li:hover .submenu1 ul li a:hover
+  {
+      color: rgb(1, 1, 15)
+  }
+  .button {
+  border-radius: 4px;
+  background-color:beige;
+  border: none;
+  color:black;
+  text-align: center;
+  font-size: 18px;
+  padding:8px;
+  width: 300px;
+  transition: all 0.5s;
+  cursor:pointer;
+  margin: 5px;
+  text-shadow: 2px 2px 2px grey;
+}
+
+.button span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+
+.button span:after {
+  content: '\00bb';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+}
+
+.button:hover span {
+  padding-right: 25px;
+}
+
+.button:hover span:after {
+  opacity: 1;
+  right: 0;
+}
+div.gallery {
+  border: 2px solid black;
+}
+
+div.gallery:hover {
+  border: 2px solid beige;
+}
+
+div.gallery img {
+  width: 100%;
+  height:400;
+  box-shadow: 9px 9px 9px rgb(1, 1, 32);
+}
+
+div.desc {
+  padding: 15px;
+  font-size:20px;
+  text-align: center;
+  text-shadow: 5px 5px 5px black;
+  color: beige;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.responsive {
+  padding: 0 6px;
+  float: left;
+  width: 16%;
+}
+
+@media only screen and (max-width: 700px) {
+  .responsive {
+    width: 49.99999%;
+    margin: 6px 0;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  .responsive {
+    width: 100%;
+  }
+}
+
+.clearfix:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+    </style>
+</head>
+<body style="background:url(https://image.freepik.com/free-photo/wall-wallpaper-concrete-colored-painted-textured-concept_53876-31799.jpg);background-size:100% 100%">
+  <header>
+    <div class="main">
+      <ul>
+        <li><a href="./home.html"><bold>Home</bold></Home></a></li>
+        <li><a href="./about.html">Our Team</a></li>
+        <li><a href="./events.html">Events</a></li>
+        <li><a href="./fashionservices.html">Fashion Services</a></li>
+        <li><a href="./login.html">Style It Up!</a></li>
+        <li class="active"><a href="./brands.html">Brands</a></li>
+        <li><a href="./women.html">Women</a>
+          <div class="submenu1">
+              <ul>
+                <li><a href="kurtis.html">Kurtis</a></li>
+                <li><a href="dress.html">Dress</a></li>
+                <li><a href="saree.html">Sarees</a></li>
+                <li><a href="jacket.html">Jackets</a></li>
+                <li><a href="heel.html">Heels</a></li>
+                <li><a href="earring.html">Earrings</a></li>
+              </ul>
+              </div>
+        </li>
+        <li><a href="./men.html">Men</a>
+          <div class="submenu1">
+              <ul>
+                 <li><a href="formalshirt.html">FormalShirts</a></li>
+                  <li><a href="jackets.html">Jackets</a></li>
+                  <li><a href="tshirt.html">T-Shirts</a></li>
+                  <li><a href="jean.html">Jeans</a></li>
+                  <li><a href="footwear.html">Footwear</a></li>
+              </ul>
+            </div>
+            </li>
+        <li><a href="./kids.html">Kids</a>
+          <div class="submenu1">
+            <ul>
+                  <li><a href="babygirl.html">Baby Girl</a></li>
+                  <li><a href="babyboy.html">Baby Boy</a></li>
+                  <li><a href="footwears.html">Footwear</a></li>
+                  <li class="active"><a href="toys.html">Toys and Books</a></li>
+              </ul>
+          </div>
+        </li>
+        <li><a href="./offers.html">Offers</a></li>
+        <li><a href="./contactus.html">Contact us</a></li>
+      </ul>
+    </div>
+       <div class="title">
+    <h1> LA STOFFA</h1>
+     <h2>Explore the stylist in you!</h2>
+  </div>
+  </header>
+ <br><br> <bold class="mov"><h2>TRENDS FOR HIM AND HER</h2></bold>
+ <br>
+ <bold class="mov1"><h3>Manyavar and Mohey</h3></bold>
+ <a href="https://www.manyavar.com/mohey" target="_blank"><button class="button"><span>Go to the website </span></button></a>
+ <br>
+ <div class="responsive">
+  <div class="gallery">
+    <a target="_blank" href="https://www.manyavar.com/complimenting-blue-gown-ga7316-406">
+      <img src="https://images.manyavar.com/product_images/15407/qty_30/1.JPG?1558350091" alt="Complimenting Blue Gown" width="505" height="348">
+    </a>
+    <div class="desc"><bold>Complimenting Blue Gown</bold></div>
+  </div>
+</div>
+<div class="responsive">
+  <div class="gallery">
+    <a target="_blank" href="https://www.manyavar.com/excuisite-cream-lehenga-unlb3979-403">
+      <img src="https://images.manyavar.com/product_images/15709/qty_30/1.JPG?1557818189" alt="Excuisite Cream Lehenga" width="505" height="348">
+    </a>
+    <div class="desc"><bold>Excuisite Cream Lehenga</bold></div>
+  </div>
+</div>
+<div class="responsive">
+  <div class="gallery">
+    <a target="_blank" href="https://www.manyavar.com/adorable-beige-kurta-C952195-303">
+      <img src="https://images.manyavar.com/product_images/11000/qty_30/1.jpg?1548137008" alt="Adorable Beige Kurta" width="505" height="370">
+    </a>
+    <div class="desc"><bold>Adorable Beige Kurta</bold></div>
+  </div>
+</div>
+<div class="responsive">
+  <div class="gallery">
+    <a target="_blank" href="https://www.manyavar.com/pistachio-green-sherwani-set-odes768-327">
+      <img src="https://images.manyavar.com/product_images/17363/qty_30/Manyavar_19'_Kartik_Aaryan-550_F1_1.jpg?1566971186" alt="Pistachio green sherwani set" width="505" height="348">
+    </a>
+    <div class="desc"><bold>Pistachio green sherwani set</bold></div>
+  </div>
+</div>
+<div class="responsive">
+  <div class="gallery">
+    <a target="_blank" href="https://www.manyavar.com/magnificient-green-indo-western-set-ides873-327">
+      <img src="https://images.manyavar.com/product_images/16193/qty_30/Manyavar_19'_Kartik_Aaryan-705_1.jpg?1566983072" alt="Magnificient green indo-western set" width="505" height="348">
+    </a>
+    <div class="desc"><bold>Magnificient green indo-western set</bold></div>
+  </div>
+</div>
+<div class="responsive">
+  <div class="gallery">
+    <a target="_blank" href="https://www.manyavar.com/grandiose-light-pink-bridal-lehenga-UNLB3799-415">
+      <img src="https://images.manyavar.com/product_images/11740/qty_30/1.jpg?1548137086" alt="Grandiose light pink bridal lehenga" width="505" height="348">
+    </a>
+    <div class="desc"><bold>Grandiose light pink bridal lehenga</bold></div>
+  </div>
+</div>
+<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+ <bold class="mov1"><h3>KENDALL + KYLIE </h3></bold>
+ <a href="https://kendall-kylie.com/" target="_blank"><button class="button"><span>Go to the website </span></button></a>
+ <br>
+ <div class="responsive">
+  <div class="gallery">
+    <a target="_blank" href="https://www.revolve.com/kendall-kylie-x-revolve-satin-convertible-cargo-romper/dp/KENR-WR25/?d=Womens&page=1&lc=1&itrownum=1&itcurrpage=1&itview=01&plpSrc=%2Fr%2FBrands.jsp%3FaliasURL%3Dkendall-kylie%2Fbr%2Fad84fc%26srcType%3Ddp_des2%26sortBy%3Dnewest%26%26s%3Db%26c%3DKENDALL%2B%252B%2BKYLIE">
+      <img src="https://is4.revolveassets.com/images/p4/n/c/KENR-WR25_V2.jpg" alt="x REVOLVE Satin Convertible Cargo Romper" width="505" height="350">
+    </a>
+    <div class="desc"><bold>x Satin Convertible Cargo Romper </bold></div>
+  </div>
+</div>
+<div class="responsive">
+  <div class="gallery">
+    <a target="_blank" href="https://www.revolve.com/kendall-kylie-charlie-satin-blazer/dp/KENR-WO45/?d=Womens&page=1&lc=3&itrownum=1&itcurrpage=1&itview=01&plpSrc=%2Fr%2FBrands.jsp%3FaliasURL%3Dkendall-kylie%2Fbr%2Fad84fc%26srcType%3Ddp_des2%26sortBy%3Dnewest%26%26s%3Db%26c%3DKENDALL%2B%252B%2BKYLIE">
+      <img src="https://is4.revolveassets.com/images/p4/n/c/KENR-WO45_V2.jpg" alt="x Charlie Satin Blazer " width="505" height="370">
+    </a>
+    <div class="desc"><bold> Charlie Satin Blazer </bold></div>
+  </div>
+</div>
+<div class="responsive">
+  <div class="gallery">
+    <a target="_blank" href="https://www.revolve.com/kendall-kylie-farrah-twill-skirt/dp/KENR-WQ26/?d=Womens&page=1&lc=5&itrownum=2&itcurrpage=1&itview=01&plpSrc=%2Fr%2FBrands.jsp%3FaliasURL%3Dkendall-kylie%2Fbr%2Fad84fc%26srcType%3Ddp_des2%26sortBy%3Dnewest%26%26s%3Db%26c%3DKENDALL%2B%252B%2BKYLIE">
+      <img src="https://is4.revolveassets.com/images/p4/n/c/KENR-WQ26_V4.jpg" alt="x Farrah Twill Skirt " width="505" height="370">
+    </a>
+    <div class="desc"><bold>Farrah Twill Skirt </bold></div>
+  </div>
+</div>
+<div class="responsive">
+  <div class="gallery">
+    <a target="_blank" href="https://www.revolve.com/kendall-kylie-poplin-draped-tunic-top/dp/KENR-WS86/?d=Womens&page=1&lc=8&itrownum=3&itcurrpage=1&itview=01&plpSrc=%2Fr%2FBrands.jsp%3FaliasURL%3Dkendall-kylie%2Fbr%2Fad84fc%26srcType%3Ddp_des2%26sortBy%3Dnewest%26%26s%3Db%26c%3DKENDALL%2B%252B%2BKYLIE">
+      <img src="https://is4.revolveassets.com/images/p4/n/c/KENR-WS86_V2.jpg" alt="Poplin Draped Tunic Top " width="505" height="350">
+    </a>
+    <div class="desc"><bold>Poplin Draped Tunic Top </bold></div>
+  </div>
+</div>
+<div class="responsive">
+  <div class="gallery">
+    <a target="_blank" href="https://www.revolve.com/kendall-kylie-x-revolve-liquid-shine-mini-slip-dress/dp/KENR-WD91/?d=Womens&page=1&lc=10&itrownum=4&itcurrpage=1&itview=01&plpSrc=%2Fr%2FBrands.jsp%3FaliasURL%3Dkendall-kylie%2Fbr%2Fad84fc%26srcType%3Ddp_des2%26sortBy%3Dnewest%26%26s%3Db%26c%3DKENDALL%2B%252B%2BKYLIE">
+      <img src="https://is4.revolveassets.com/images/p4/n/z/KENR-WD91_V1.jpg" alt="X REVOLVE Liquid Shine Mini Slip Dress" width="505" height="350">
+    </a>
+    <div class="desc"><bold>X REVOLVE Liquid Shine Mini Slip Dress </bold></div>
+  </div>
+</div>
+<div class="responsive">
+  <div class="gallery">
+    <a target="_blank" href="https://www.revolve.com/kendall-kylie-faux-fur-vest/dp/KENR-WO32/?d=Womens&page=1&lc=27&itrownum=9&itcurrpage=1&itview=01&plpSrc=%2Fr%2FBrands.jsp%3FaliasURL%3Dkendall-kylie%2Fbr%2Fad84fc%26srcType%3Ddp_des2%26sortBy%3Dnewest%26%26s%3Db%26c%3DKENDALL%2B%252B%2BKYLIE">
+      <img src="https://is4.revolveassets.com/images/p4/n/z/KENR-WO32_V1.jpg" alt="Faux Fur Vest " width="505" height="374">
+    </a>
+    <div class="desc"><bold>Faux Fur Vest </bold></div>
+  </div>
+</div>
+<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+<bold class="mov1"><h3>H & M</h3></bold>
+ <a href="https://www2.hm.com/en_in/index.html" target="_blank"><button class="button"><span>Go to the website </span></button></a>
+ <br>
+ <div class="responsive">
+  <div class="gallery">
+    <a target="_blank" href="https://www2.hm.com/en_in/productpage.0785719001.html">
+      <img src="https://lp2.hm.com/hmgoepprod?set=source[/2d/c6/2dc6ffe7e2c868639007cc8cb5af0ef31932eec7.jpg],origin[dam],category[ladies_tops_shortsleeve],type[LOOKBOOK],res[m],res[m],hmver[1]&call=url[file:/product/main]" alt="THANK U NEXT X H&M" width="505" height="350">
+    </a>
+    <div class="desc"><bold>THANK U NEXT X H&M</bold></div>
+  </div>
+</div>
+<div class="responsive">
+  <div class="gallery">
+    <a target="_blank" href="https://www2.hm.com/en_in/productpage.0745219003.html">
+      <img src="https://lp2.hm.com/hmgoepprod?set=source[/67/c1/67c1354f8afdeefa550a52ec48f35330f5887c1c.jpg],origin[dam],category[ladies_tops_vests],type[LOOKBOOK],res[m],res[m],hmver[1]&call=url[file:/product/main]" alt="Short, flared top in a crinkled viscose weave" width="505" height="350">
+    </a>
+    <div class="desc"><bold>Short, flared top in a crinkled viscose weave</bold></div>
+  </div>
+</div>
+<div class="responsive">
+  <div class="gallery">
+    <a target="_blank" href="https://www2.hm.com/en_in/productpage.0760250003.html">
+      <img src="https://lp2.hm.com/hmgoepprod?set=source[/47/9b/479ba814b18f84e09cfc583b6d85c522e9de743c.jpg],origin[dam],category[],type[LOOKBOOK],res[m],res[m],hmver[1]&call=url[file:/product/main]" alt="" width="505" height="370">
+    </a>
+    <div class="desc"><bold>Cashmere-blend jumper</bold></div>
+  </div>
+</div>
+<div class="responsive">
+  <div class="gallery">
+    <a target="_blank" href="https://www2.hm.com/en_in/productpage.0686564013.html">
+      <img src="https://lp2.hm.com/hmgoepprod?set=source[/ad/cf/adcf18bbb4a637b55fe41d52bef28d6e8f870ca2.jpg],origin[dam],category[men_shirt_dressed_regularfit],type[LOOKBOOK],res[m],res[m],hmver[1]&call=url[file:/product/main]" alt="Cotton shirt Regular Fit" width="505" height="370">
+    </a>
+    <div class="desc"><bold>Cotton shirt Regular Fit</bold></div>
+  </div>
+</div>
+<div class="responsive">
+  <div class="gallery">
+    <a target="_blank" href="https://www2.hm.com/en_in/productpage.0797412001.html">
+      <img src="https://lp2.hm.com/hmgoepprod?set=source[/d7/03/d7035a5f4faa8bf9663d64850ee012e6c9e2a8ee.jpg],origin[dam],category[],type[LOOKBOOK],res[m],res[m],hmver[1]&call=url[file:/product/main]" alt="Patterned jersey dress" width="505" height="370">
+    </a>
+    <div class="desc"><bold>Patterned jersey dress</bold></div>
+  </div>
+</div>
+<div class="responsive">
+  <div class="gallery">
+    <a target="_blank" href="https://www2.hm.com/en_in/productpage.0785141002.html">
+      <img src="https://lp2.hm.com/hmgoepprod?set=source[/06/93/069331df36e2b43c30d92eef64e0fd0efd9e456e.jpg],origin[dam],category[],type[LOOKBOOK],res[m],res[m],hmver[1]&call=url[file:/product/main]" alt="Hooded top with a motif" width="505" height="370">
+    </a>
+    <div class="desc"><bold>Hooded top with a motif</bold></div>
+  </div>
+</div>
+<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+<bold class="mov1"><h3>NIKE</h3></bold>
+ <a href="https://www.nike.com/in/" target="_blank"><button class="button"><span>Go to the website </span></button></a>
+ <br>
+ <div class="responsive">
+  <div class="gallery">
+    <a target="_blank" href="https://www.nike.com/in/t/indy-light-support-yoga-sports-bra-R7jQcd/BQ5366-010">
+      <img src="https://c.static-nike.com/a/images/t_PDP_864_v1/f_auto,b_rgb:f5f5f5/gqcn5nqwj4zmehzpq0km/indy-light-support-yoga-sports-bra-R7jQcd.jpg" alt="Nike Indy" width="505" height="370">
+    </a>
+    <div class="desc"><bold>Nike Indy</bold></div>
+  </div>
+</div>
+<div class="responsive">
+  <div class="gallery">
+    <a target="_blank" href="https://www.nike.com/in/t/swoosh-support-sports-bra-T8LQR0/BV3562-657">
+      <img src="https://c.static-nike.com/a/images/t_PDP_864_v1/f_auto,b_rgb:f5f5f5/gmnd3am4newfss7d9tm0/swoosh-support-sports-bra-T8LQR0.jpg" alt="Nike Swoosh" width="505" height="370">
+    </a>
+    <div class="desc"><bold>Nike Swoosh</bold></div>
+  </div>
+</div>
+<div class="responsive">
+  <div class="gallery">
+    <a target="_blank" href="https://store.nike.com/in/en_gb/product/phantom-vision-elite-id/?piid=45006&pbid=295633772">
+      <img src="https://c.static-nike.com/a/images/t_PDP_864_v1/f_auto,b_rgb:f5f5f5/tjnkmllhdyg88x5hwkgu/phantom-vision-elite-dynamic-fit-fg-firm-ground-soccer-cleat-xQqVgP.jpg" alt="NIKE PHANTOM VISION ELITE" width="505" height="350">
+    </a>
+    <div class="desc"><bold>NIKE PHANTOM VISION ELITE</bold></div>
+  </div>
+</div>
+<div class="responsive">
+  <div class="gallery">
+    <a target="_blank" href="https://www.nike.com/in/t/stranger-things-t-shirt-LrPbB4/CK2342-010">
+      <img src="https://c.static-nike.com/a/images/t_PDP_864_v1/f_auto,b_rgb:f5f5f5,q_80/qvsqtiqj4hhsz9rzuu1e/stranger-things-t-shirt-LrPbB4.jpg" alt="Nike x Stranger Things" width="505" height="370">
+    </a>
+    <div class="desc"><bold>Nike x Stranger Things </bold></div>
+  </div>
+</div>
+<div class="responsive">
+  <div class="gallery">
+    <a target="_blank" href="https://www.nike.com/in/t/fc-barcelona-2019-20-stadium-home-older-football-shirt-VrcDZc/AJ5801-457">
+      <img src="https://c.static-nike.com/a/images/t_PDP_864_v1/f_auto,b_rgb:f5f5f5/oiovt5mlsjcysvigpxtp/fc-barcelona-2019-20-stadium-home-older-football-shirt-VrcDZc.jpg" alt="Older Kids' Football Shirt" width="505" height="350">
+    </a>
+    <div class="desc"><bold>Older Kids' Football Shirt</bold></div>
+  </div>
+</div>
+<div class="responsive">
+  <div class="gallery">
+    <a target="_blank" href="https://www.nike.com/in/t/sportswear-long-sleeve-top-d22F2K/BV4675-100">
+      <img src="https://c.static-nike.com/a/images/t_PDP_864_v1/f_auto,b_rgb:f5f5f5,q_80/q1uz8nx1jcwfotszsqev/sportswear-long-sleeve-top-d22F2K.jpg" alt="Women's Long-Sleeve Top" width="505" height="350">
+    </a>
+    <div class="desc"><bold>Women's Long-Sleeve Top</bold></div>
+  </div>
+</div>
+<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+</body>
+</head>
+</html>

@@ -1,0 +1,372 @@
+<!DOCTYPE html>
+   <html> 
+   <head>
+    <title>Contact us</title>
+    <style>
+    .title h1{
+  color:ivory;
+  font-size: 50px;
+  font-family: Haettenschweiler;
+  text-shadow: 3px 3px 3px black;
+}
+.title h2{
+    color:rgb(220, 228, 228);
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    text-shadow: 3px 3px 3px black;
+}
+.title h3{
+      font-family: Arial, Helvetica, sans-serif;
+      color:beige;
+      text-align: center;
+      text-shadow: 3px 3px 3px black;
+}
+  }
+  .mov{
+  color: beige;
+  text-align:center;
+  font-family:Arial, Helvetica, sans-serif;
+  text-shadow: 5px 5px 5px #000;
+  }
+  .mov1{
+  color:aquamarine;
+  font-size: 22px;
+  text-align:left;
+  font-family:Arial, Helvetica, sans-serif;
+  text-shadow: 5px 5px 5px #000;
+  }
+  ul{
+  float:right;
+  list-style-type: none;
+  margin-top: 25px;
+}
+*{
+  margin:0;
+  padding:0;
+}
+ul li {
+  display: inline-block;
+}
+ul li a{
+  text-decoration:none;
+  color: black;
+  padding: 5px 20px;
+  border : 1px solid transparent;
+  transition: 0.6s ease;
+  font-family: 'Trebuchet MS';
+
+}
+ ul li a:hover{
+   background-color:beige;
+   color: black;
+ }
+
+ ul li.active a{
+  background-color:gold ;
+   color: black;
+ }
+ .submenu1{
+  display: none;
+}
+.main ul li:hover .submenu1
+{
+      display: block;
+      position: absolute;
+      background:black ;
+      color: black;
+      margin-top: 6px;
+      margin-left :-15px;
+      box-shadow: 0px 8px 16px 0px rgba(0,0,0.2);
+      z-index: 1;
+    }
+
+  .main ul li:hover .submenu1 ul
+  {
+      display: block;
+      margin:10px;
+  }
+  .main ul li:hover .submenu1 ul li
+  {
+   width:150px;
+   padding: 15px;
+   border-bottom: 1px dotted white;
+   background:transparent;
+  }
+  .main ul li:hover .submenu1 ul li:last-child
+  {
+      border-bottom: none;
+  }
+  .main ul li:hover .submenu1 ul li a:hover
+  {
+      color: rgb(1, 1, 15)
+  }
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+ 
+}
+.contactBody{
+
+    background-size: cover;
+    background-attachment: fixed;
+    height:700px;
+
+}
+.title1{
+    margin: 0 auto;
+    width: 50%;
+    text-align: center;
+    padding-bottom: 10px;
+    font-size: 42px;
+    color: rgb(252, 252, 252);
+  }
+
+  #title-Tag-Line{
+      font-size: 20px;
+  }
+  
+/* This will center the form */
+  .wrapper {
+    width: 100%;
+    height: 100%;
+    margin: 0 auto; 
+  }
+
+/* form animation starts */
+  .form {
+    background: rgb(167, 232, 252);
+    text-align: center; 
+    box-shadow: 0px 0px 20px 5px rgb(17, 3, 49); 
+    border-radius: 10px;  
+    width: 45%; 
+    height: 400px;
+    margin: 30px auto 0 auto;
+    padding: 10px 10px;  
+    animation: bounce 1.5s infinite;
+  }
+
+.name { 
+    background-color: rgb(190, 113, 149);
+    border-bottom: 5px solid #B2175F;
+    color: white;
+    width:300px;
+    height:50px;
+  }
+
+  ::-webkit-input-placeholder{
+      color: rgb(12, 12, 12);
+      font-size: 20px;
+  }
+  .name:hover{
+    background-color: rgb(109, 16, 59);
+    border-bottom: 5px solid #B2175F;
+    height:60px;
+    width:400px;
+    color: aliceblue;
+  }
+
+  .email {
+    background-color: rgb(154, 121, 201);  
+    border-bottom: 5px solid #502789;
+    height:50px;
+    width:300px;
+    
+  }
+  .email:hover{
+    background-color: #7239C1;  
+    border-bottom: 5px solid #502789;
+    height:60px;
+    width:380px;
+   
+  }
+  .message {   
+    background-color: rgb(233, 190, 158);
+    border-bottom: 5px solid rgb(195, 35, 17);
+    overflow: hidden;
+    height:100px;  
+    width:300px;
+  }
+
+  .message:hover{
+    background-color: #2DD7BB;
+    border-bottom: 5px solid #2BB09A;
+    height: 120px;
+    width:370px;
+    color:black;
+  }
+
+  .submit{
+    border-radius:5px;
+    padding:10px;
+    background-color: #2DD7BB;  
+    border: none;
+    border-bottom: 5px solid #CB64B2; 
+    transform: translateY(-120px); 
+
+  }
+
+  .submit:hover{
+    border-bottom: 5px solid #CB64B2;  
+    box-shadow: 15px 15px 15px 5px rgba(78, 72, 77, 0.219);
+  }
+
+  .entry{
+    display: block;
+    margin: 30px auto;
+    padding: 10px;
+    border-radius: 5px;
+    border: none;
+    transition: all 0.5s ease 0s;
+    box-shadow: 0px 0px 25px 2px #AAA;  
+  }
+
+  /* Shadow to make it look like form is floating  */
+  .shadow{
+    box-shadow: 0px 0px 60px 5px #AAA;
+    opacity: 0.5;
+    border-radius: 100px;
+    width: 50%; 
+    margin: 50px auto 0 auto;
+    padding: 0 20px;  
+    animation: shadow 1.5s infinite;
+  }
+.submit{
+    border-radius:5px;
+    padding:10px;
+    width:150px;
+    color: white;
+    background-color: #EE78D1;  
+    border: none;
+    border-bottom: 5px solid #CB64B2; 
+    margin-top: 150px; 
+
+  }
+
+
+
+  @keyframes bounce{
+    0%{
+      
+    }
+    50%{
+      transform: translate(0, 8px);
+    }
+
+  }
+  @keyframes shadow{
+    0%{
+      
+    }
+    50%{
+      opacity: 0.8;
+      width: 50%;
+    }
+  }
+  iframe{
+  box-shadow: 6px 7px 7px rgb(1, 1, 32);
+  left:0;
+width:1700px;
+}
+
+.ok{
+    color:rgb(224, 205, 205);
+    text-shadow: 2px 2px 2px black;
+    position: absolute;
+
+}
+
+   </style>
+</head>
+<body style="background:url(http://honarkadehgraphic.com/wp-content/uploads/2015/09/title-background-contact-1024x434.jpg);background-size:100% 100%;">
+  <header>
+      <div class="main">
+          <ul>
+            <li><a href="./home.html"><bold>Home</bold></Home></a></li>
+            <li><a href="./about.html">Our Team</a></li>
+            <li><a href="./events.html">Events</a></li>
+            <li><a href="./fashionservices.html">Fashion Services</a></li>
+            <li><a href="./login.html">Style It Up!</a></li>
+            <li><a href="./brands.html">Brands</a></li>
+            <li><a href="./women.html">Women</a>
+              <div class="submenu1">
+                  <ul>
+                    <li><a href="./clo4.html">Kurtis</a></li>
+                    <li><a href="./clo2.html">Dress</a></li>
+                    <li><a href="./clo1.html">Sarees</a></li>
+                    <li><a href="./clo7.html">Jackets</a></li>
+                    <li><a href="sample.html">Heels</a></li>
+                    <li><a href="./acc6.html">Earrings</a></li>
+                  </ul>
+                  </div>
+            </li>
+            <li><a href="./men.html">Men</a>
+              <div class="submenu1">
+                  <ul>      
+                     <li><a href="./FormalShirts.html">FormalShrits</a></li>
+                      <li><a href="./Jackets.html">Jackets</a></li>
+                      <li><a href="./Tshirts.com">T-Shirts</a></li>
+                      <li><a href="./Jackets.html">Jeans</a></li>
+                      <li><a href="./Jackets.html">Footwear</a></li>
+                  </ul>
+                </div>
+                </li>
+            <li><a href="./kids.html">Kids</a>
+              <div class="submenu1">
+                <ul>
+                      <li><a href="./baby girl fashion.html">Baby Girl</a></li>
+                      <li><a href="./baby boy fashion.html">Baby Boy</a></li>
+                      <li><a href="./footwear.html">Footwear</a></li>
+                      <li><a href="./toys and books.html">Toys</a></li>
+                  </ul>
+                  </div>
+            </li>
+            <li><a href="./offers.html">Offers</a></li>
+            <li class="active"><a href="./contactus.html">Contact us</a></li>
+          </ul>
+        </div>
+       <div class="title">
+    <h1> LA STOFFA</h1>
+     <h2>Explore the stylist in you!</h2>
+     <br>
+    <br>
+         <h2> Reach out to us to avail our best services!</h2>
+         <br>
+         <br>
+         <h3> Got a question? We'd love to hear from you.<br>Send us a message and we'll respond as soon as possible.</h3>
+  </div>
+  </header>
+ <div class="contactBody">   
+        <div class="wrapper">
+        <div class="title1">
+           
+      
+        </div>
+      
+
+        <form class="form">
+          <input type="text" class="name entry " placeholder="Your Name"/>
+          
+          <input type="text" class="email entry" placeholder="Email"/>
+          
+          <textarea class="message entry" placeholder="Message"></textarea> 
+          
+          <button class="submit entry" onclick="thanks()">Submit</button>
+        </form>  
+        
+        <div class="shadow"></div>
+      </div>
+ </div>
+ 
+
+ <div class="mapouter"><div class="gmap_canvas">
+    <iframe width="1900" height="400" id="gmap_canvas" src="https://maps.google.com/maps?q=langford%20road%2C%20Bangalore&t=&z=17&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0">
+    </iframe>
+    <a href="https://www.maps-erstellen.de"></a></div>
+    <h3 class="ok"> <strong> Email:</strong> lastoffa@fashionblog.com | <strong> Phone:</strong>
+        917-555-1098 |<strong> Address:</strong> 371th, Langford Road, Bangalore</h3>
+    <style>.mapouter{position:relative;text-align:right;height:700px;width:1000px;}.gmap_canvas {overflow:hidden;background:none!important;height:700px;width:1350px;}
+    </style></div>
+   
+     
+</body>
+</html>

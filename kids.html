@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html>
+<head>
+        <title>kid</title>
+<style>
+body, html {
+  height: 100%;
+  margin: 0;
+  font: 400 15px/1.8 "Lato", sans-serif;
+  color: #777;
+  transition: background-color .5s;
+}
+.bgimg-1, .bgimg-2, .bgimg-3 {
+  position: relative;
+  opacity: 0.78;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+}
+.bgimg-1 {
+  background-image: url("202.jpg");
+  min-height: 100%;
+}
+
+.bgimg-2 {
+  background-image: url("201.jpg");
+  min-height: 400px;
+}
+
+.bgimg-3 {
+  background-image: url("200.jpg");
+  min-height: 400px;
+}
+
+.caption {
+  position:absolute;
+  left:0;
+  top: 50%;
+  width: 100%;
+  text-align: center;
+  color: #000;
+}
+.border1{
+  background-color: rgb(29, 1, 1);
+  color:azure;
+   padding: 30px;
+  font-size: 70px;
+  font-family: Haettenschweiler;
+  text-shadow: 3px 3px 3px  black;
+  letter-spacing: 10px;
+}
+.caption span.border {
+  background-color: rgb(29, 1, 1);
+  color:azure;
+   padding: 30px;
+  font-size: 70px;
+  font-family: Haettenschweiler;
+  text-shadow: 5px 5px 5px whitesmoke;
+  letter-spacing: 10px;
+}
+.caption span.okay {
+    color:black;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    text-shadow: 3px 3px 3px rgb(37, 3, 3);
+    letter-spacing: 5px;
+    font-size: 30px;
+}
+h2 {
+  letter-spacing: 5px;
+  font-size: 40px;
+  text-transform: uppercase;
+  font: 20px "Lato", sans-serif;
+  color:white;
+}
+.but1{
+  background:transparent;
+  border: none;
+  color:rgb(10, 10, 10);
+  text-align: center;
+  font-size: 40px;
+  padding:8px;
+  transition: all 0.5s;
+  cursor:pointer;
+  margin: 5px;
+  text-shadow: 2px 2px 2px rgb(247, 239, 239);
+}
+.button {
+  border-radius: 8px;
+  background-color: white;
+  border: none;
+  color:black;
+  text-align: center;
+  font-size: 40px;
+  padding:18px;
+  width: 300px;
+  transition: all 0.5s;
+  cursor:pointer;
+  margin: 5px;
+  text-shadow: 2px 2px 2px grey;
+}
+
+.button span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+
+.button span:after {
+  content: '\00bb';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+}
+
+.button:hover span {
+  padding-right: 25px;
+}
+
+.button:hover span:after {
+  opacity: 1;
+  right: 0;
+}
+.sidenav {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: #111;
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 60px;
+}
+.sidenav a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #818181;
+  display: block;
+  transition: 0.3s;
+}
+
+.sidenav a:hover {
+  color: #f1f1f1;
+}
+
+.sidenav .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+}
+
+#main {
+  transition: margin-left .5s;
+  padding: 16px;
+}
+
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+}
+</style>
+</head>
+<script>
+        function openNav() {
+          document.getElementById("mySidenav").style.width = "250px";
+          document.getElementById("main").style.marginLeft = "250px";
+          document.body.style.backgroundColor = "rgba(0,0,0,0.4)";
+        }
+        
+        function closeNav() {
+          document.getElementById("mySidenav").style.width = "0";
+          document.getElementById("main").style.marginLeft= "0";
+          document.body.style.backgroundColor = "white";
+        }
+ </script>
+<body>
+
+<div class="bgimg-1">
+    <button class="but1" onclick="openNav()">☰</button>
+  <div class="caption">
+  <span class="border1"><bold>KIDS' COLLECTION</bold></span><br>
+  <span class="okay"><h5>Check out our in-store collections!</h5></span>
+  </div>
+</div>
+
+<div style="color: rgb(202, 192, 192);background-color:rgb(37, 33, 33);text-align:center;padding:50px 80px;text-align: justify;">
+  <h2 style="text-align:center;">Here we Go</h2>
+     <p>Along with all your affection and attention, your little bundle of joy deserves the best when it comes to newborn & baby items. Pamper your lil' one with the widest range of newborn & baby products: right from diapers to potty chairs, onesies to party wear, booties to clogs, carry-cots to baby walkers, rattles to learning toys, we have it all!</p>
+</div>
+
+<div class="bgimg-2">
+  <div class="caption">
+  <span class="border" style="background-color:transparent;font-size:25px;color: #131212;">Our endeavour is to ensure that you get the widest possible choice of top rated brands!</span>
+  </div>
+</div>
+
+<div style="position:relative;">
+  <div style="color:#ddd;background-color:rgb(68, 64, 64);text-align:center;padding:50px 80px;text-align: justify;">
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+
+        <img src="206.png"width="500">
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+       
+        <img src="205.jpg"width="500">
+        <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+  <bold><font size=4px>Shopping for your kid is no child's play and thus we help you explore, choose and buy from an exhaustive & finest collection of kids' products.</font></bold></p>
+  </div>
+</div>
+
+<div class="bgimg-3">
+  <div class="caption">
+  <span class="border" style="background-color:transparent;font-size:25px;color: #0a0a0a;">LET YOUR LITTLE BUNDLE OF JOY HAVE IT ALL!</span>
+  </div>
+</div>
+
+<div style="position:relative;">
+  <div style="color:#ddd;background-color:rgb(88, 88, 88);text-align:center;padding:50px 80px;text-align: justify;">
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <img src="203.jpg"width="500">
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <img src="204.jpg"width="500">
+        <p>
+      <bold> <font size=4px></bold>We empathize with you as a mother who always aspires to bestow her newborn, infant, baby or kid with the best things even for their smallest needs. That is why, 'Mommy Knows Best'. From breastfeeding to bathing essentials, right furniture to myriad baby care products, a mother needs them all for her lil' one.This inspires us.</font></bold></p>
+ </div>
+</div>
+<div class="bgimg-1">
+  <div class="caption">
+ <button class="button"><span onclick="openNav()">Explore</span></button>
+  </div>
+</div>
+<div id="mySidenav" class="sidenav">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <a href="./babygirl.html"target="_blank">Baby Girl</a>
+        <a href="./babyboy.html"target="_blank">Baby Boy</a>
+        <a href="./footwears.html"target="_blank">Footwear</a>
+        <a href="./toys.html"target="_blank">Toys and Books</a>
+      </div>
+</body>
+</html>
